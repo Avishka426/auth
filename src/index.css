@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  background-color: #E8ECF6;
+}
+
+
+.loog {
+  font-family: "Aclonica", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+ /* .loog{
+  font-family: "DM Sans";
+ } */
+
+ .form-label {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btn-log{
+  background-color: #09404F !important;
+}
+
+.reset a{
+  text-decoration: none !important;
+  color: #7A7C82 !important;
+}
+
+.reset a button{
+  border: none;
+  
+}
+
+.reset a button span{
+  color:#7A7C82;
+}
+
+.reset a button span:hover{
+  text-decoration: underline !important;
+}
+
+.form-label-suc{
+  color: green;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.form-label-mg{
+  color: #7A7C82;
+}
