@@ -12,16 +12,14 @@ function App() {
   return (
     <Router>
       <Routes>
-       
-        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/dashboard" />} />
         <Route path="/dashboard/*" element={<MainLayout />} />
-          <Route path="login" element={<Login />} /> {/* Login Page */}
-          <Route path="reset-password-verification" element={<ResetPasswordVerification />} /> {/* Reset Password Verification Page */}
-          <Route path="verification-code" element={<VerificationCode />} /> {/* Verification Code Page */}
-          <Route path="reset-password" element={<ResetPassword />} /> {/* Reset Password Page */}
-          <Route path="password-reset-success" element={<PasswordResetSuccess />} /> {/* Password Reset Success Page */}
-          <Route path="*" element={<NotFound />} />
-       
+        <Route path="login" element={<Login />} /> {/* Login Page */}
+        <Route path="reset-password-verification" element={<ResetPasswordVerification />} /> {/* Reset Password Verification Page */}
+        <Route path="verification-code" element={<VerificationCode />} /> {/* Verification Code Page */}
+        <Route path="reset-password" element={<ResetPassword />} /> {/* Reset Password Page */}
+        <Route path="password-reset-success" element={<PasswordResetSuccess />} /> {/* Password Reset Success Page */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

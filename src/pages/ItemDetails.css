@@ -1,0 +1,266 @@
+.item-details-container {
+  padding: 32px 32px 0 32px;
+  background: #e9edf5;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.header-left h1 {
+  font-size: 2.5rem;
+  color: #18404a;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.breadcrumb {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.controls-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  justify-content: flex-end;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #d3dae6;
+  border-radius: 6px;
+  padding: 0 8px;
+  height: 40px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 0;
+  width: 200px;
+  color: #18404a;
+}
+
+.search-input::placeholder {
+  color: #a0aec0;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #18404a;
+  padding: 0 8px;
+}
+
+.search-btn:hover {
+  background: #2d5555;
+}
+
+.search-icon {
+  font-size: 1rem;
+}
+
+.add-new-btn {
+  background: #18404a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.add-new-btn:hover {
+  background: #22606e;
+}
+
+.table-container {
+  background: #fff;
+  border-radius: 6px 6px 0 0;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(24, 64, 74, 0.04);
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.05rem;
+}
+
+.items-table thead {
+  background: #18404a;
+  color: #fff;
+}
+
+.items-table th {
+  padding: 14px 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  border-bottom: none;
+}
+
+.items-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.items-table tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+.items-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.items-table td {
+  padding: 12px 0;
+  text-align: left;
+  color: #18404a;
+  border-bottom: 1px solid #e9edf5;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  padding: 10px 24px;
+  box-shadow: 0 2px 8px rgba(24, 64, 74, 0.04);
+  margin-bottom: 24px;
+}
+
+.pagination-info {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-btn {
+  background: #e9edf5;
+  border: none;
+  color: #18404a;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #e9edf5;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-number {
+  background: #e9edf5;
+  color: #18404a;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.page-number.active {
+  background: #18404a;
+  color: #fff;
+/* Custom scrollbar for table */
+.table-container::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+.table-container::-webkit-scrollbar-thumb {
+  background: #18404a;
+  border-radius: 5px;
+}
+.table-container::-webkit-scrollbar-track {
+  background: #e9edf5;
+  border-radius: 5px;
+}
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .item-details-container {
+    padding: 15px;
+  }
+  
+  .controls-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .search-container {
+    justify-content: stretch;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .items-table {
+    min-width: 600px;
+  }
+  
+  .table-footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .pagination-controls {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-details-container {
+    padding: 10px;
+  }
+  
+  .items-table th,
+  .items-table td {
+    padding: 12px 8px;
+    font-size: 0.85rem;
+  }
+  
+  .add-new-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
